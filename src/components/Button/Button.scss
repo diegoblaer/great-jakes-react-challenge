@@ -4,6 +4,7 @@
 .button {
   @extend .animated;
   background-color: $dark-blue;
+  font-family: inherit;
   border: none;
   color: $white;
   text-decoration: none;
@@ -34,23 +35,17 @@
     & > span {
       text-align: center;
       white-space: nowrap;
-      flex-grow: 1;
     }
   }
 
   span {
     display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
-
     font-size: $font-size-base;
     line-height: $line-height-base;
     font-style: normal;
     font-weight: 600;
     letter-spacing: -0.5px;
-
     color: $white;
   }
 

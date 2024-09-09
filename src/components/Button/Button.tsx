@@ -6,16 +6,11 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant: "default" | "icon";
 }
 
-const Button = ({ variant, ...props }: ButtonProps) => {
-  const buttonText: Record<ButtonProps["variant"], string> = {
-    icon: "This is a two line button that terminates with...",
-    default: "This is a one line button",
-  };
-
+const Button = ({ variant, children, ...props }: ButtonProps) => {
   return (
     <button className={`button ${variant}`} {...props}>
       {variant === "icon" && <SearchIcon />}
-      <span>{buttonText[variant]}</span>
+      <span>{children}</span>
     </button>
   );
 };

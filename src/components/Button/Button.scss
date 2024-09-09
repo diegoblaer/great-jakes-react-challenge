@@ -1,0 +1,64 @@
+@import "../../styles/variables";
+@import "../../styles/shared";
+
+.button {
+  @extend .animated;
+  background-color: $dark-blue;
+  border: none;
+  color: $white;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 70px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  &.icon {
+    padding: 11px 19px 11px 27px;
+
+    & > span {
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      text-align: left;
+      flex-grow: 1;
+    }
+  }
+
+  &.default {
+    padding: 23px 33px;
+
+    & > span {
+      text-align: center;
+      white-space: nowrap;
+      flex-grow: 1;
+    }
+  }
+
+  span {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+
+    color: $white;
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  &:disabled {
+    background-color: $gray;
+  }
+}

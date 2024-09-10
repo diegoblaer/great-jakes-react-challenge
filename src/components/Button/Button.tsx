@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes } from "react";
-import "./Button.scss";
+import styles from "./Button.module.scss";
 import { SearchIcon } from "../icons";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -8,7 +8,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button = ({ variant, children, ...props }: ButtonProps) => {
   return (
-    <button className={`button ${variant}`} {...props}>
+    <button className={`${styles.button} ${styles[variant]}`} {...props}>
       {variant === "icon" && <SearchIcon />}
       <span>{children}</span>
     </button>

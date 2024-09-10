@@ -1,13 +1,12 @@
 @import "../../styles/variables";
 @import "../../styles/shared";
 
-.firm-fact-card {
+.firmFactCard {
   @extend .animated;
   background-color: $white;
   display: flex;
   align-items: center;
   overflow: hidden;
-  width: 100%;
 
   &.border {
     align-items: flex-start;
@@ -17,7 +16,7 @@
     &:hover {
       border: 15px solid $green;
 
-      .button {
+      button {
         background-color: $green;
       }
     }
@@ -30,8 +29,8 @@
     &:hover {
       background-color: $green;
 
-      .button {
-        border: 2px solid $white;
+      button {
+        outline: 2px solid $white;
         background-color: $green;
       }
     }

@@ -1,13 +1,13 @@
 import { Button } from "../Button";
 import { FirmFactCard } from "../FirmFactCard";
-import "./FirmFacts.scss";
+import styles from "./FirmFacts.module.scss";
 
 const ONE_LINE_TEXT = "This is a one line button";
 const TWO_LINE_TEXT = "This is a two line button that terminates with...";
 
 const FirmFacts = () => {
   return (
-    <div className="firm-facts">
+    <div className={styles.firmFacts}>
       <FirmFactCard variant="default">
         <Button variant="icon">{TWO_LINE_TEXT}</Button>
       </FirmFactCard>

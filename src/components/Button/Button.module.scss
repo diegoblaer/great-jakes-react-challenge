@@ -21,11 +21,12 @@
     padding: 11px 19px 11px 27px;
 
     & > span {
+      display: -webkit-box;
+      overflow: hidden;
       text-overflow: ellipsis;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       text-align: left;
-      flex-grow: 1;
     }
   }
 
@@ -39,8 +40,6 @@
   }
 
   span {
-    display: -webkit-box;
-    overflow: hidden;
     font-size: $font-size-base;
     line-height: $line-height-base;
     font-style: normal;
@@ -51,6 +50,7 @@
 
   svg {
     flex-shrink: 0;
+    margin-bottom: -2px;
   }
 
   &:disabled {

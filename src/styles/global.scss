@@ -10,12 +10,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: $font-family;
-  background: $dark-blue;
+  background: $surface-light;
 }
 
 .layout {
   max-width: $screen-max-width;
-  min-width: $screen-min-width;
   margin: 0 auto;
-  padding: 0 85px;
 }

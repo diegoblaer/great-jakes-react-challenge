@@ -1,0 +1,74 @@
+@import "../../styles/variables";
+
+.header {
+  width: 100%;
+  padding-left: $padding-left;
+  height: 131px;
+  padding-right: 43px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 785px;
+    bottom: 0px;
+    right: 56px;
+    background: $surface-dark-20;
+  }
+}
+
+.logo {
+  height: 100%;
+  width: 135px;
+  background: $surface-dark;
+}
+
+.navigation {
+  display: flex;
+  gap: 219px;
+  align-items: center;
+
+  nav {
+    height: 100%;
+
+    ul {
+      display: flex;
+      list-style: none;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding: 0 32px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          background: $surface-primary;
+        }
+
+        span {
+          font-size: 24px;
+          line-height: 1;
+          letter-spacing: 0.3px;
+          color: $surface-dark;
+          text-decoration: none;
+          font-weight: 450;
+        }
+      }
+    }
+  }
+}
+
+.search {
+  padding: 12px;
+  border-radius: 100%;
+  display: flex;
+
+  &:hover {
+    background: $surface-primary;
+  }
+}

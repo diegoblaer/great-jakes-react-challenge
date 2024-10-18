@@ -1,3 +1,1 @@
-export { Button } from "./Button";
-export { FirmFactCard } from "./FirmFactCard";
-export { FirmFacts } from "./FirmFacts";
+export { Header } from "./Header";

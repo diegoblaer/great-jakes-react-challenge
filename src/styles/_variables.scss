@@ -1,15 +1,12 @@
 // Typography
-$font-family: "Open Sans";
-$font-size-base: clamp(14px, 1.5vw, 19px);
-$line-height-base: clamp(16px, 1.5vw, 24px);
+$font-family: "neue-haas-grotesk-display";
 
 // Layout
-$screen-min-width: 768px;
 $screen-max-width: 1680px;
+$padding-left: 55px;
 
 // Colors
-$dark-blue: #2d3e4e;
-$green: #07c06a;
-$white: #ffffff;
-$gray: #aaaaaa;
-$white: #ffffff;
+$surface-light: #ffffff;
+$surface-dark: #56585c;
+$surface-dark-20: #56585c20;
+$surface-primary: #fcd700;

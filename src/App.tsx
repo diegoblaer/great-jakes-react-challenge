@@ -1,10 +1,12 @@
-import { FirmFacts } from "./components";
+import { Header } from "./components";
+import { Main } from "./components/Main";
 import "./styles/global.scss";
 
 function App() {
   return (
     <div className="layout">
-      <FirmFacts />
+      <Header />
+      <Main />
     </div>
   );
 }
